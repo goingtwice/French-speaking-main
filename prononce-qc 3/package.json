@@ -1,0 +1,23 @@
+{
+  "name": "prononce-qc",
+  "version": "3.0.0",
+  "description": "A free, self-hosted course for TEF / TCF Canada: A1-B2 grammar, timed practice, exam templates, and multi-accent pronunciation.",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/e2e.mjs && node test/course.mjs && node test/plan.mjs",
+    "test:pron": "node test/e2e.mjs",
+    "test:course": "node test/course.mjs",
+    "build": "node build.mjs",
+    "serve": "python3 -m http.server 8000",
+    "test:plan": "node test/plan.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}
